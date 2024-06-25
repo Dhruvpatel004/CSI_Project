@@ -44,6 +44,13 @@ app.post('/api/tweet/post/', upload.single('media'), async (req, res) => {
         res.status(500).send('Failed to post tweet');
     }
 });
+app.post('/',(req, res) => {
+    const { message } = req.body;
+    const file = req.file;
+
+        res.status(200).send("API IS Working Find");
+
+});
 
 app.listen(5001, (err) => {
     if (err) {
