@@ -34,7 +34,7 @@ const post_tweet = async (message, file) => {
 
 const fetchQuote = async () => {
     try {
-        const response = await axios.get('https://api.api-ninjas.com/v1/quotes?category=morning', {
+        const response = await axios.get('https://api.api-ninjas.com/v1/quotes?category=computers', {
             headers: {
                 'X-Api-Key': process.env.QUOTES_API_KEY
             }
