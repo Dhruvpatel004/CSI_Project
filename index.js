@@ -24,7 +24,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Schedule the cron job to run daily at 2:35 PM IST
-cron.schedule('55 14 * * *', () => {
+cron.schedule('50 15 * * *', () => {
     tweetDailyQuote();
 }, {
     scheduled: true,
